@@ -6,18 +6,36 @@
 
         <title>Laravel</title>
 
+        <!-- Fonts -->
+        <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
         <!-- Styles -->
+        @vite('resources/js/app.js')
     </head>
     <body>
         @include('partials.header')
-        <div>
-            <img src="img/adv.jpg" alt="logo">
-            @foreach ($comics as $comic)
-                <div>
-                    <img src="{{ print_r( $comic['thumb'])}}" alt="">        
+        <main>
+            <div class="jumbotron bg-danger">
+                <div class="container">
+                    <div class="Series">
+                        <h1>CURRENT SERIES</h1>
+                    </div>
+                </div>            
+            </div>
+            <div class="container">
+                <div class="mb-t">
+                    @foreach ($comics as $comic)
+                        <div class="m-1">
+                            <img src="{{  $comic['thumb'] }}" alt="">        
+                        </div>
+                    @endforeach                        
                 </div>
-            @endforeach
-        </div>
+                <div class="btn-primary">
+                    <img src="../img/dc-logo.png" alt="logo">   
+                    <button>LOAD MORE</button>
+                </div>
+            </div>
+        </main>
         @include('partials.footer')
     </body>
 </html>
