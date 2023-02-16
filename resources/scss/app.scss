@@ -55,9 +55,10 @@ header {
             li {
                 padding: 1rem;
 
-                .active {
-                    color: #0282F9;
-                    border-bottom: 5px solid #0282F9;
+                &.active a,
+                &:hover a {
+                    color: $primary;
+                    border-bottom: 5px solid $primary ;
                 }
 
                 a {
