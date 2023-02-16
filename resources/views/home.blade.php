@@ -7,13 +7,15 @@
         <title>Laravel</title>
 
         <!-- Styles -->
-        <link href="{{ asset('/css/app.css') }}" rel="stylesheet"> 
     </head>
     <body>
         @include('partials.header')
         <div>
+            <img src="img/adv.jpg" alt="logo">
             @foreach ($comics as $comic)
-            {{ print_r( $comic['title'])}}            
+                <div>
+                    <img src="{{ print_r( $comic['thumb'])}}" alt="">        
+                </div>
             @endforeach
         </div>
         @include('partials.footer')
