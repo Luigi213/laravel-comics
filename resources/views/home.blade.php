@@ -23,15 +23,17 @@
                 </div>            
             </div>
             <div class="container">
-                <div class="mb-t">
+                <div class="mb-t mt-2">
                     @foreach ($comics as $comic)
-                        <div class="m-1">
-                            <img src="{{  $comic['thumb'] }}" alt="">        
+                        <div class="card-sp-main">
+                            <div class="card-image-sp-main">
+                                <img src="{{  $comic['thumb'] }}" alt="">        
+                            </div>
+                            {{ $comic['series']}}
                         </div>
                     @endforeach                        
                 </div>
-                <div class="btn-primary">
-                    <img src="../img/dc-logo.png" alt="logo">   
+                <div class="btn-s">  
                     <button>LOAD MORE</button>
                 </div>
             </div>

@@ -32,6 +32,46 @@ button {
     all: unset;
 }
 
+// header style
+
+header {
+    .col-content {
+        margin: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .image {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        ul {
+            display: flex;
+
+            li {
+                padding: 1rem;
+
+                .active {
+                    color: #0282F9;
+                    border-bottom: 5px solid #0282F9;
+                }
+
+                a {
+                    padding-bottom: 43px;
+                    color: #000000;
+                    font-size: 10px;
+                    font-weight: 600;
+                }
+
+            }
+        }
+    }
+}
+
 // main style
 
 main {
@@ -39,7 +79,7 @@ main {
 
     .jumbotron {
         height: 400px;
-        background-image: url(../img/jumbotron.jpg);
+        background-image: url(img/jumbotron.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top, center;
@@ -51,29 +91,48 @@ main {
             display: flex;
             flex-wrap: wrap;
             width: 100%;
-            padding: 25px 0;
+            padding: 20px 0;
+
+            .card-sp-main {
+                color: #ffff;
+                width: calc(100% / 6 - 30px);
+                margin: 20px 15px 15px 15px;
+
+                .card-image-sp-main {
+                    margin-bottom: 1rem;
+
+                    img {
+                        width: 100%;
+                        height: 175px;
+                        object-fit: cover;
+                        object-position: top;
+                    }
+                }
+            }
         }
 
         .Series {
-            color: red;
+            color: #ffff;
             position: absolute;
-            top: 94.5%;
-            background-color: white;
-            padding: 0.5rem 1.5rem;
+            top: 92.8%;
+            background-color: #0282F9;
+            padding: 0.5rem 1.5rem 0.3rem;
 
             h1 {
                 font-size: 25px
             }
         }
 
-        .btn {
+        .btn-s {
             display: flex;
+            justify-content: center;
             align-items: center;
-            color: red;
+            color: #ffff;
             padding-bottom: 1.5rem;
 
             button {
-                background-color: white;
+                all: unset;
+                background-color: #0282F9;
                 padding: 1rem 4rem;
                 cursor: pointer;
             }
@@ -92,15 +151,22 @@ footer {
             padding: 20px 0;
             display: flex;
 
-            .card {
+            .card-sp {
                 width: calc(100% / 5);
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                ;
 
-                &:last-child .card-image {
-                    margin-right: 10px
+                &:last-child .card-image-sp img {
+                    width: 45%;
+                }
+
+                .card-image-sp {
+                    width: 40%;
+
+                    img {
+                        width: 35%;
+                    }
                 }
 
                 span {
@@ -139,7 +205,7 @@ footer {
         }
 
         .container {
-            background: url(../assets/images/dc-logo-bg.png);
+            background: url(img/dc-logo-bg.png);
             background-repeat: no-repeat;
             background-position: right;
         }

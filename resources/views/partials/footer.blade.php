@@ -1,10 +1,45 @@
 <footer>
     <section class="bg-footer-nav">
-        <div class="container-footer">
-            <div class="card">
-                <div class="card-image">
-                    <img src="">
-                </div>            
+        <div class="container-footer py-5">
+            <div class="card-sp text-center">
+                <div class="card-image-sp">
+                    <img src="img/buy-comics-digital-comics.png">
+                </div>
+                <div>
+                    <span>DIGITAL COMICS</span>       
+                </div>     
+            </div>
+            <div class="card-sp text-center">
+                <div class="card-image-sp">
+                    <img src="img/buy-comics-merchandise.png">
+                </div>
+                <div>
+                    <span>DC MERCHANDISE</span>       
+                </div>     
+            </div>
+            <div class="card-sp text-center">
+                <div class="card-image-sp">
+                    <img src="img/buy-comics-subscriptions.png">
+                </div>     
+                <div>
+                    <span>SUBSCRIPTION</span>       
+                </div>
+            </div>
+            <div class="card-sp text-center">
+                <div class="card-image-sp">
+                    <img src="img/buy-comics-shop-locator.png">
+                </div>
+                <div>
+                    <span>COMIC SHOP LOCATOR</span>       
+                </div>     
+            </div>
+            <div class="card-sp text-center">
+                <div class="card-image-sp">
+                    <img src="img/buy-dc-power-visa.svg">
+                </div>
+                <div>
+                    <span>DC POWER VISA</span>       
+                </div>     
             </div>
         </div>
     </section>
@@ -64,11 +99,11 @@
                 <div class="icons">
                     <h3>FOLLOW US</h3>
                     <div class="icon">
-                        <img src="./img/footer-facebook.png" alt="logo-facebook">
-                        <img src="./img/footer-twitter.png" alt="logo-twitter">
-                        <img src="./img/footer-youtube.png" alt="logo-youtube">
-                        <img src="./img/footer-pinterest.png" alt="logo-pinterest">
-                        <img src="./img/footer-periscope.png" alt="logo-periscope">
+                        <img src="img/footer-facebook.png" alt="logo-facebook">
+                        <img src="img/footer-twitter.png" alt="logo-twitter">
+                        <img src="img/footer-youtube.png" alt="logo-youtube">
+                        <img src="img/footer-pinterest.png" alt="logo-pinterest">
+                        <img src="img/footer-periscope.png" alt="logo-periscope">
                     </div>
                 </div>
             </div>
