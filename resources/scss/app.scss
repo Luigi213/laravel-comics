@@ -159,14 +159,16 @@ footer {
                 align-items: center;
 
                 &:last-child .card-image-sp img {
-                    width: 45%;
+                    width: 65%;
                 }
 
                 .card-image-sp {
                     width: 40%;
 
                     img {
-                        width: 35%;
+                        width: 50%;
+                        height: 50px;
+                        object-fit: contain;
                     }
                 }
 
