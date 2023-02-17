@@ -1,43 +1,27 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
+@section('title', 'Comics')
 
-        <title>Laravel</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
-        <!-- Styles -->
-        @vite('resources/js/app.js')
-    </head>
-    <body>
-        @include('partials.header')
-        <main>
-            <div class="jumbotron bg-danger">
-                <div class="container">
-                    <div class="Series">
-                        <h1>CURRENT SERIES</h1>
-                    </div>
-                </div>            
-            </div>
-            <div class="container">
-                <div class="mb-t mt-2">
-                    @foreach ($comics as $comic)
-                        <div class="card-sp-main">
-                            <div class="card-image-sp-main">
-                                <img src="{{  $comic['thumb'] }}" alt="">        
-                            </div>
-                            {{ $comic['series']}}
-                        </div>
-                    @endforeach                        
+@section('content')
+<div class="jumbotron bg-danger">
+    <div class="container">
+        <div class="Series">
+            <h1>CURRENT SERIES</h1>
+        </div>
+    </div>            
+</div>
+<div class="container">
+    <div class="mb-t mt-2">
+        @foreach ($comics as $comic)
+            <div class="card-sp-main">
+                <div class="card-image-sp-main">
+                    <img src="{{  $comic['thumb'] }}" alt="">        
                 </div>
-                <div class="btn-s">  
-                    <button>LOAD MORE</button>
-                </div>
+                {{ $comic['series']}}
             </div>
-        </main>
-        @include('partials.footer')
-    </body>
-</html>
+        @endforeach                        
+    </div>
+    <div class="btn-s">  
+        <button>LOAD MORE</button>
+    </div>
+</div>
+@endsection
