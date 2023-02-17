@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-content">
                 <div class="image">
-                    <img src="img/dc-logo.png" alt="logo">
+                    <img src="../img/dc-logo.png" alt="logo">
                 </div>
                 <ul class="m-0">
                     <li><a href="/">CHARACTERS</a> </li>

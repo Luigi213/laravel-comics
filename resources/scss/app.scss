@@ -80,7 +80,7 @@ main {
 
     .jumbotron {
         height: 400px;
-        background-image: url(img/jumbotron.jpg);
+        background-image: url(../img/jumbotron.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top, center;
@@ -208,7 +208,7 @@ footer {
         }
 
         .container {
-            background: url(img/dc-logo-bg.png);
+            background: url(../img/dc-logo-bg.png);
             background-repeat: no-repeat;
             background-position: right;
         }

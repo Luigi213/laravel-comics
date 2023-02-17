@@ -21,7 +21,7 @@ Route::get('/', function () {
 
 Route::get('/detail/{title}', function($titolo){
     $comics = config('db');
-    dd($titolo);
+
     $single = '';
     foreach($comics as $comic){
         if($comic['title'] == $titolo){
