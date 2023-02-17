@@ -18,3 +18,16 @@ Route::get('/', function () {
 
     return view('home', compact('comics'));
 });
+
+Route::get('/detail/{title}', function($titolo){
+    $comics = config('db');
+    dd($titolo);
+    $single = '';
+    foreach($comics as $comic){
+        if($comic['title'] == $titolo){
+            $single = $titolo;
+        }
+    }
+
+    return view('detail_comic', compact('single'));
+})->name('detail-comic');

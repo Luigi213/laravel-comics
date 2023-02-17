@@ -13,12 +13,14 @@
     <div class="mb-t mt-2">
         @foreach ($comics as $comic)
             <div class="card-sp-main">
-                <div class="card-image-sp-main">
-                    <img src="{{  $comic['thumb'] }}" alt="">        
-                </div>
-                {{ $comic['series']}}
-            </div>
-        @endforeach                        
+                <a href="{{ route('detail-comic', ['title' => $comic['title']])}}">
+                    <div class="card-image-sp-main">
+                        <img src="{{  $comic['thumb'] }}" alt="">        
+                    </div>
+                    {{ $comic['series']}}
+                </a>
+            </div>            
+            @endforeach                        
     </div>
     <div class="btn-s">  
         <button>LOAD MORE</button>
