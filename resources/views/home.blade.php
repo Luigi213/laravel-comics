@@ -11,9 +11,9 @@
 </div>
 <div class="container">
     <div class="mb-t mt-2">
-        @foreach ($comics as $comic)
+        @foreach ($comics as $key => $comic)
             <div class="card-sp-main">
-                <a class="text-white" href="{{ route('detail-comic', ['series' => $comic['series']])}}">
+                <a class="text-white" href="/detail/{{$key}}">
                     <div class="card-image-sp-main">
                         <img src="{{  $comic['thumb'] }}" alt="{{  $comic['series'] }}">        
                     </div>

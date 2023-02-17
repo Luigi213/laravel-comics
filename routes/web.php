@@ -19,12 +19,12 @@ Route::get('/', function () {
     return view('home', compact('comics'));
 });
 
-Route::get('/detail/{series}', function($title){
+Route::get('/detail/{id}', function($id){
     $comics = config('db');
 
-    foreach($comics as $comic){
+    foreach($comics as $key => $comic){
 
-        if($comic['series'] == $title){
+        if($key == $id){
             $single = $comic;
         }
     }

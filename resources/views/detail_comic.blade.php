@@ -13,13 +13,14 @@
 <div class="bg-white">
     <div class="container py-4">
         <div class="row">
-            <div class="col-8">
+            <div class="col-7">
                 <h1>{{strtoupper($single['title'])}}</h1>
                 <p>{{$single['description']}}</p>
             </div>
-            <div class="col-4">
-                <div class="h-100">
-                    <img class="h-100" src="./public/img/adv.jpg" alt="adv">
+            <div class="col-5">
+                <div>
+                    <h6>ADVERTISEMENT</h6>
+                    <img src="../img/adv.jpg" alt="adv">
                 </div>
             </div>
         </div>
