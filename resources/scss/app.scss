@@ -85,6 +85,18 @@ main {
         background-size: cover;
         background-position: top, center;
         position: relative;
+
+        .Series {
+            color: #ffff;
+            position: absolute;
+            top: 92.8%;
+            background-color: #0282F9;
+            padding: 0.5rem 1.5rem 0.3rem;
+
+            h1 {
+                font-size: 25px
+            }
+        }
     }
 
     .container {
@@ -112,17 +124,6 @@ main {
             }
         }
 
-        .Series {
-            color: #ffff;
-            position: absolute;
-            top: 92.8%;
-            background-color: #0282F9;
-            padding: 0.5rem 1.5rem 0.3rem;
-
-            h1 {
-                font-size: 25px
-            }
-        }
 
         .btn-s {
             display: flex;

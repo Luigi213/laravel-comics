@@ -19,15 +19,15 @@ Route::get('/', function () {
     return view('home', compact('comics'));
 });
 
-Route::get('/detail/{title}', function($titolo){
+Route::get('/detail/{series}', function($title){
     $comics = config('db');
 
-    $single = '';
     foreach($comics as $comic){
-        if($comic['title'] == $titolo){
-            $single = $titolo;
+
+        if($comic['series'] == $title){
+            $single = $comic;
         }
     }
-
+    
     return view('detail_comic', compact('single'));
 })->name('detail-comic');
