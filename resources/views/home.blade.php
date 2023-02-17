@@ -13,7 +13,7 @@
     <div class="mb-t mt-2">
         @foreach ($comics as $comic)
             <div class="card-sp-main">
-                <a href="{{ route('detail-comic', ['series' => $comic['series']])}}">
+                <a class="text-white" href="{{ route('detail-comic', ['series' => $comic['series']])}}">
                     <div class="card-image-sp-main">
                         <img src="{{  $comic['thumb'] }}" alt="{{  $comic['series'] }}">        
                     </div>
