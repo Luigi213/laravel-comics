@@ -5,14 +5,23 @@
 <div class="jumbotron bg-danger">
     <div class="container">
         <div class="Serie">
-            <img src="{{ $single['thumb'] }}" alt="">
+            <img src="{{ $single['thumb'] }}" alt="{{ $single['title'] }}">
         </div>
     </div>            
 </div>
-<div class="container">
-    <div class="row">
-        <div class="col-12 text-white">
-            sono il dettaglio
+<div class="bg-sp"></div>
+<div class="bg-white">
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-8">
+                <h1>{{strtoupper($single['title'])}}</h1>
+                <p>{{$single['description']}}</p>
+            </div>
+            <div class="col-4">
+                <div class="h-100">
+                    <img class="h-100" src="./public/img/adv.jpg" alt="adv">
+                </div>
+            </div>
         </div>
     </div>
 </div>

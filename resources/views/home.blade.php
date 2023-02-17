@@ -17,7 +17,7 @@
                     <div class="card-image-sp-main">
                         <img src="{{  $comic['thumb'] }}" alt="{{  $comic['series'] }}">        
                     </div>
-                    {{ $comic['series']}}
+                    {{ strtoupper($comic['series'])}}
                 </a>
             </div>            
         @endforeach                        
